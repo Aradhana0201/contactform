@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sub">
+            <h1>CONTACT US</h1>
+            <h3>For any queries leave a message and we will contact you:</h3>
+        </div>
+        <div class="contact">
+            <form id="contactform" >
+                <h3>
+                    <label>Name:</label>
+                    <input id="uname" type="text" placeholder="Full Name" required>
+                    </br></br>
+
+                    <label>Phone:</label>
+                    <input id="phone" type="number" placeholder="Phone number" maxlength="10" required>
+                    </br></br>
+
+                    <label>Gender:</label>
+                    <input id="gender" type="radio" name="Gender" value="Male">Male
+                    <input id="gender" type="radio" name="Gender" value="Female">Female
+                    <input id="gender" type="radio" name="Gender" value="Others">Others
+                    </br></br>
+
+                    <label>Email ID:</label>
+                    <input id="email" type="email" placeholder="Email id" required></br></br>
+
+                    <label>Message:</label>
+                    </br>
+                    <textarea id="message" rows="7" cols="30" placeholder="Please write your message here." required></textarea>
+                    </br></br>
+                    
+                    <div class="confirm">Your message has been sent.</div>
+
+                    <input type="submit" value="Submit">
+                </h3>
+            </form>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-database.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
